@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/examples/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        p.highlight{
+            background:yellow;
+        }
+    </style>
+   <script>
+
+$(document).ready(function(){
+    $('.fade_in').click(function(){
+        $('p').fadeIn();
+    });
+    $('.fade_out').click(function(){
+        $('p').fadeOut();
+    });
+});
+   </script>
+    <title>Jquery</title>
+</head>
+<body>
+   <form>
+       <button class="fade_in" type="button">Fade-In</button>
+       <button class="fade_out" type="button">Fade-out</button>
+       <p>This will Toggle</p>
+   </form>
+</body>
+</html>
+
+
