@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>This is Name</h1>
+
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('btn-click').click(function(){
+			$get('get.html',function(data,status){
+				$('#changehere').html(data);
+				alert(status);
+			})
+		})
+	})
+
+
+</script>
